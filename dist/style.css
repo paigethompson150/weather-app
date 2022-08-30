@@ -1,0 +1,27 @@
+body, html{
+  height: 100vh;
+}
+
+body{
+  background-image: url(./assets/purple-landscape-scenery-minimalist-4k-8y-1336x768.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchBar input{
+  background-color: rgba(255, 193, 206, 0.931);
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+  font-size: 1.1em;
+  border: none;
+}
+
+.searchBar {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+

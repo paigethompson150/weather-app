@@ -1,0 +1,1 @@
+(()=>{"use strict";!async function(o,t){const a=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${o}&units=${t}&APPID=b0861edf97f03a6a99ea8bc6531f4315`,{mode:"cors"});try{const o=await a.json();console.log(o)}catch{console.log("could not find that location")}}("London","imperial")})();
