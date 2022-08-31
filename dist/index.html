@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="searchBar">
-    <h4>weather</h4>
+    <h4 id="unit">C°</h4>
+    <label class="switch">
+      <input id="switch" type="checkbox">
+      <span class="slider round"></span>
+    </label>
     <div class="input">
       <input type="text" id="search" placeholder="Search City...">
 
@@ -24,14 +28,14 @@
 
   <div class="weatherDisplay">
    <div class="leftDisplay">
-      <div class="displayItem" id="temp">
+      <div class="displayItem" id="tempBox">
         <h1 id="temp">16°</h1>
       </div>
-      <div class="displayItem" id="location">
+      <div class="displayItem" id="locationBox">
         <h2 id="city">London</h2>
         <h4 id="country">GB</h4>
       </div>
-      <div class="displayItem" id="description">
+      <div class="displayItem" id="descripBox">
         <img src="./assets/cloud.svg" alt="">
         <h4 id="description">Cloudy</h4>
       </div>

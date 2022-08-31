@@ -23,7 +23,7 @@ function populateData(data){
   console.log(data);
 
   //appending items to DOM
-  temp.innerHTML = data.temp;
+  temp.innerHTML = data.temp + '<span>°</span>';
   city.innerHTML = data.name;
   country.innerHTML = data.country;
   description.innerHTML = data.description;

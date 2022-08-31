@@ -1,6 +1,7 @@
 
 import loadJson from './loadJson.js';
 import populateData from './populateData.js';
+import updateSearch from './index.js';
 
 export default function findElements() {
   let ny = document.getElementById('ny');
@@ -31,6 +32,7 @@ const pushSearch = (search, unit) => {
   try{
     loadJson(search, unit).then(function(response) {
     populateData(response);
+    updateSearch(search);
     });
   }
   catch{
