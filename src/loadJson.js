@@ -20,7 +20,8 @@ async function loadJson(search, unit) {
     return weatherData;
   }
   catch {
-    console.log('could not find that location');
+
+    alert('Sorry, I could not find that location!');
   }
   
 }
