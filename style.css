@@ -76,8 +76,8 @@ body{
   width: 200px;
 }
 
-#tempBox span{
-  font-size: 0.8em;
+span{
+  font-size: 0.4em;
 }
 
 #descripBox {
