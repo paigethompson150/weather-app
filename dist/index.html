@@ -9,11 +9,58 @@
 </head>
 <body>
   <div class="searchBar">
-    <input type="text" placeholder="search city">
+    <h4>Weather App</h4>
+    <input type="text" placeholder="Search City...">
   </div>
 
   <div class="weatherDisplay">
-   
+   <div class="leftDisplay">
+      <div class="displayItem" id="temp">
+        <h1 id="temp">16°</h1>
+      </div>
+      <div class="displayItem" id="location">
+        <h2 id="city">London</h2>
+        <h4 id="country">GB</h4>
+      </div>
+      <div class="displayItem" id="description">
+        <img src="./assets/cloud.svg" alt="">
+        <h4 id="description">Cloudy</h4>
+      </div>
+   </div>
+   <div class="rightDisplay">
+    <div class="sampleLocations">
+      <h3>New York</h3>
+      <h3>London</h3>
+      <h3>Mumbai</h3>
+      <h3>Berlin</h3>
+    </div>
+    <div class="weatherDetails">
+
+      <h3>Weather Details</h3>
+
+      <div class="weatherItem">
+        <h4>Feels Like: </h4>
+        <h4 id="feelsLike">14°</h4>
+      </div>
+      <div class="weatherItem">
+        <h4>Max Temp: </h4>
+        <h4 id="maxTemp">18°</h4>
+      </div>
+      <div class="weatherItem">
+        <h4>Min Temp: </h4>
+        <h4 id="minTemp">12°</h4>
+      </div>
+      <div class="weatherItem">
+        <h4>Humidity: </h4>
+        <h4 id="humidity">80%</h4>
+      </div>
+      <div class="weatherItem">
+        <h4>Wind: </h4>
+        <h4 id="wind">80mph</h4>
+      </div>
+  
+    </div>
+   </div>
   </div>
   <script src="main.js"></script>
 </body>
