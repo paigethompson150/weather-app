@@ -35,6 +35,7 @@ const pushSearch = (newSearch, unit) => {
     loadJson(newSearch, unit).then(function(response) {
     populateData(response);
     search = newSearch;
+    
     });
   }
   catch{

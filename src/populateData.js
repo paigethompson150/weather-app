@@ -1,5 +1,9 @@
+import {unit} from './index.js';
+
 //target DOM elements and populate weather data into DOM
 function populateData(data){
+  //check for unit type
+  let unitSymbol = checkUnit(unit);
   //temperature display in DOM
   let temp = document.getElementById('temp');
   //city display in DOM
@@ -19,20 +23,26 @@ function populateData(data){
   //wind display
   let wind = document.getElementById('wind');
 
-
-  console.log(data);
-
   //appending items to DOM
-  temp.innerHTML = data.temp + '<span>°</span>';
+  temp.innerHTML = data.temp + '<span>'+`${unitSymbol}`+'</span>';
   city.innerHTML = data.name;
   country.innerHTML = data.country;
   description.innerHTML = data.description;
-  feelsLike.innerHTML = data.feelsLike;
-  maxTemp.innerHTML = data.tempMax; 
-  minTemp.innerHTML = data.tempMin; 
+  feelsLike.innerHTML = data.feelsLike + '<span>'+`${unitSymbol}`+'</span>';
+  maxTemp.innerHTML = data.tempMax  + '<span>'+`${unitSymbol}`+'</span>'; 
+  minTemp.innerHTML = data.tempMin  + '<span>'+`${unitSymbol}`+'</span>'; 
   humidity.innerHTML = data.humidity; 
   wind.innerHTML = data.wind;
 
+}
+
+const checkUnit = (unit) => {
+  if (unit === 'imperial'){
+    return '°F';
+  }
+  else {
+    return '°C';
+  }
 }
 
 
