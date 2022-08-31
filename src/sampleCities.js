@@ -2,6 +2,8 @@
 import loadJson from './loadJson.js';
 import populateData from './populateData.js';
 import updateSearch from './index.js';
+import {search} from './index.js';
+import {unit} from './index.js';
 
 export default function findElements() {
   let ny = document.getElementById('ny');
@@ -11,28 +13,28 @@ export default function findElements() {
 
   //adding event listeners
   ny.addEventListener('click', function(){
-    pushSearch('New York', 'imperial');
+    pushSearch('New York', unit);
   });
 
   lon.addEventListener('click', function(){
-    pushSearch('London', 'imperial');
+    pushSearch('London', unit);
   });
 
   mum.addEventListener('click', function(){
-    pushSearch('Mumbai', 'imperial')
+    pushSearch('Mumbai', unit)
   });
 
   berl.addEventListener('click', function(){
-    pushSearch('Berlin', 'imperial')
+    pushSearch('Berlin', unit)
   });
 }
 
 //make new search
-const pushSearch = (search, unit) => {
+const pushSearch = (newSearch, unit) => {
   try{
-    loadJson(search, unit).then(function(response) {
+    loadJson(newSearch, unit).then(function(response) {
     populateData(response);
-    updateSearch(search);
+    search = newSearch;
     });
   }
   catch{

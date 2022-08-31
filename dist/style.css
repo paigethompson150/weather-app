@@ -107,11 +107,13 @@ body{
 
 .rightDisplay {
   background-color: rgba(255, 193, 206, 0.2);
+  border-radius: 5px;
   margin: auto;
   margin-bottom: 0;
   text-align: left;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 20px;
   height: 80%;
   width: 30%;
 }
@@ -122,6 +124,9 @@ body{
   }
 }
 
+.weatherDetails h3:first-of-type{
+  margin-bottom: 20px;
+}
 
 .weatherItem {
   display: flex;
@@ -133,6 +138,9 @@ body{
   padding-right: 40px;
 }
 
+.sampleLocations{
+  border-bottom: 2px solid lightpink;
+}
 
 .sampleLocations h3:hover{
   cursor: pointer;

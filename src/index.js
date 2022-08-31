@@ -59,7 +59,8 @@ function updateUnit(newUnit){
   document.getElementById('unit').innerHTML = `${unit}`+'°';
 }
 
-findElements();
+findElements(unit);
 export default pushSearch;
+export {search, unit};
 
 
