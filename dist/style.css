@@ -1,14 +1,17 @@
 /* template inspiration credits to Arthur K https://dribbble.com/shots/7118235-Weather-DailyUI-037 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body, html{
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   color: white;
   box-sizing: border-box;
 }
 
 body{
-  background-image: url(./assets/purple-landscape-scenery-minimalist-4k-8y-1336x768.jpeg);
+  /*background-image: url(./assets/purple-landscape-scenery-minimalist-4k-8y-1336x768.jpeg);*/
+  background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+  /*background-image: url(https://images.unsplash.com/photo-1524947972591-6ee2ccaaa848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +33,7 @@ body{
 }
 
 .searchBar input{
-  background-color: rgba(255, 193, 206, 0.3);
+  background-color: rgba(255, 254, 254, 0.2);
   color: white;
   padding: 10px;
   padding-left: 20px;
@@ -106,7 +109,7 @@ span{
 /* right display */
 
 .rightDisplay {
-  background-color: rgba(255, 193, 206, 0.2);
+  background-color: rgba(255, 254, 254, 0.2);
   border-radius: 5px;
   margin: auto;
   margin-bottom: 0;
