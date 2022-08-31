@@ -7,4 +7,6 @@ I used the OpenWeatherMap API, ES6 modules and webpack to create a responsive we
 <a href="https://paigethompson150.github.io/weather-app">Weather App</a>
 
 ## Preview
-Preview coming soon!
+![preview of page](https://i.imgur.com/opXTKip.jpg)
+
+Design inspiration from Arthur K: https://dribbble.com/shots/7118235-Weather-DailyUI-037
