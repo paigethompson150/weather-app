@@ -1,5 +1,6 @@
 import loadJson from './loadJson.js';
 import populateData from './populateData.js';
+import findElements from './sampleCities.js';
 
 //set default city and unit
 let search = 'London';
@@ -7,7 +8,7 @@ let unit = 'imperial';
 
 
 //retrieve array of data from weather API
-let pushSearch = (search, unit) => {
+const pushSearch = (search, unit) => {
   try{
     loadJson(search, unit).then(function(response) {
     populateData(response);
@@ -32,5 +33,7 @@ document.getElementById('btn').addEventListener('click', function(){
   }
 });
 
+findElements();
+export default pushSearch;
 
 

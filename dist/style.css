@@ -14,13 +14,27 @@ body{
   background-size: cover;
 }
 
+.input{
+  position: absolute;
+  right: 10%;
+}
+
+.input button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .searchBar input{
-  background-color: rgba(255, 193, 206, 0.931);
+  background-color: rgba(255, 193, 206, 0.3);
+  color: white;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  position: absolute;
-  right: 10%;
   border-radius: 7px;
   font-size: 1.1em;
   border: none;
@@ -58,7 +72,7 @@ body{
 }
 
 #temp{
-  font-size: 3em;
+  font-size:2em;
 }
 
 #location h2, h4{
@@ -79,11 +93,14 @@ body{
 /* right display */
 
 .rightDisplay {
+  background-color: rgba(255, 193, 206, 0.2);
   margin: auto;
-  text-align: right;
+  margin-bottom: 0;
+  text-align: left;
+  padding-left: 10%;
   padding-right: 10%;
   height: 80%;
-  width: 100%;
+  width: 30%;
 }
 
 @media only screen and (max-width: 600px){
@@ -95,10 +112,16 @@ body{
 
 .weatherItem {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-top: 10px;
 }
 
 .weatherItem h4:first-of-type{
   padding-right: 40px;
+}
+
+.sampleLocations h3:hover{
+  cursor: pointer;
+  background-color: rgba(255, 193, 206, 0.1);
+  padding: 2px;
 }
